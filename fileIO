@@ -1,0 +1,50 @@
+a=open("sahil.txt","r")
+f=a.read()
+print(f)
+a.close()
+
+
+# a=open("sahil.txt","w")
+# b=a.write("\nbfchggh")
+# print(b)
+#
+# a.close()
+
+
+a=open("sahil.txt","a")
+b=a.write("\nbfchggh")
+print(b)
+
+a.close()
+
+# handle read and write both together
+
+# a=open("sahil.txt" ,"r+" )
+# print(a.read())
+# a.write("\nthank u")
+
+# use of seek() and tell()
+
+# f = open("sahil.txt", "r")
+# print(f.readline() )
+# print(f.tell())
+# print(f.readline() )
+# print(f.tell())
+# f.close()
+
+# f=open("sahil.txt","a")
+# # print(f.readline())
+# a=f.write("\nguyuygkjhkj")
+# print(a)
+# f.seek(10)
+# # print(f.readline())
+# f.close()
+
+# USING WITH BLOCK TO OPEN FILE
+# with open("sahil.txt") as f:
+#     a = f.readlines()
+#     print(a)
+# # BECAUSE THE FILE HAS BEEN CLOSED SO IT WILL NOT EFFECT DOWNSIDE PROGRAM
+# a=open("sahil.txt" ,"r+" )
+# print(a.read())
+# a.write("\nthank u")

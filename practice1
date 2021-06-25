@@ -1,0 +1,70 @@
+# def funnc1():
+#     print("this is a normal type of function")
+# fun= funnc1
+# fun()
+
+
+
+
+# def fun1(num):
+#     if num==0:
+#         return print
+#     else:
+#         return sum
+# a=fun1(1)
+# print(a)
+
+
+
+# def func2(func):
+#     func("Function as argument")
+# func2(print)
+
+
+# <-------------DECORATOR CONCEPT--------------->
+
+def dec1(func1):
+    def nowexec():
+        print("executing now")
+        func1()
+        print("execute")
+    return nowexec
+@dec1
+def sahil():
+    print("sent  to the  dec1")
+#sahil= dec1(sahil)
+sahil()
+
+
+
+# Python program to illustrate functions
+# can be passed as arguments to other functions
+
+
+def upper1(text):
+    return text.upper()
+
+def low1(text):
+    return text.lower()
+
+def call(fun):
+    calling=fun("this is sparta")
+    print(calling)
+
+call(upper1)
+call(low1)
+
+
+# Python program to illustrate functions
+# Functions can return another function
+
+def create_adder(x):
+	def adder(y):
+		return x+y
+
+	return adder
+
+add_15 = create_adder(15)
+
+print(add_15(10))
+

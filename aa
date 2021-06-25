@@ -1,0 +1,25 @@
+# def fun(n):
+#     for i in range(n):
+#         for j in range(0,i+1):
+#             print("* ", end="")
+#         print("\r")
+# fun(5)
+#
+#
+# def rev(n):
+#     for i in range(n,0):
+#
+#         for j in range(i,0):
+#             print("* ",end=" ")
+#         print("\r")
+# rev(-5)
+#
+
+def args(a):
+
+    print(a)
+    i=0
+    for n in a:
+        print(n)
+f=["sahil","tum","sahil"]
+args(f)

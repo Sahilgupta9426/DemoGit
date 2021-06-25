@@ -1,0 +1,6 @@
+list1= ["ss","dd","aa","ee"]
+
+for ind , item in enumerate(list1):
+    if ind%2==0:
+
+        print(f"it's a {item}")

@@ -1,0 +1,71 @@
+
+# class Emp:
+#     nol=6
+#     def __init__(self , name , salary ,gender):
+#
+#         self.name=name
+#         self.salary=salary
+#         self.gender=gender
+#         print(self.gender)
+#
+#     def prindetails(self):
+#         return f"the {self.name}, {self.salary}, {self.geneder}"
+#
+# emp1=Emp("sahil",9999,"male")
+# print(emp1.name)
+
+
+# class Emp:
+#     nol=6
+    # def __init__(self , name , salary ,gender):
+    #
+    #     self.name=name
+    #     self.salary=salary
+    #     self.gender=gender
+    #     print(self.gender)
+
+    # def prindetails(self):
+    #     return f"the {self.name}, {self.salary}, {self.geneder}"
+
+#     @classmethod
+#     def change_nol(cls , newnol):
+#         cls.nol=newnol
+#
+# # emp1=Emp("sahil",9999,"male")
+# emp1=Emp()
+# # print(emp1.name)
+#
+# emp1.change_nol(55)
+# print(emp1.nol) #calling by Intance in print method
+# print(Emp.nol) #calling by class in print method
+
+
+
+
+# class Emp:
+#     def __init__(self, aname, asalary, arole):
+#         self.name=aname
+#         self.salary=asalary
+#         self.role=arole
+#     @classmethod
+#     def from_dash(cls , string):
+#          param=string.split("-")
+#          print(param)
+#          return cls(param[0],param[1],param[2])
+# em=Emp.from_dash("karan-77-intsd")
+# print(em.salary)
+
+
+
+#one line
+class Emp:
+    def __init__(self, aname, asalary, arole):
+        self.name=aname
+        self.salary=asalary
+        self.role=arole
+    @classmethod
+    def from_dash(cls , string):
+
+         return cls(*string.split("-"))
+em=Emp.from_dash("karan-77-intsd")
+print(em.salary)

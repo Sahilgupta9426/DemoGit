@@ -1,0 +1,66 @@
+# import time
+# def ge():
+#
+#     k=0
+#     t = time.time()
+#     while(k<500):
+#         print(k)
+#         k=k+1
+#
+#     print(time.time()-t)
+# ge()
+
+
+# import datetime
+#
+# t=datetime.datetime.now()
+# def getdate():
+#     f=open("sahil.txt","a")
+#
+#
+#     f.close()
+# getdate()
+
+# import datetime
+#
+# with open("sahil.txt", mode='a') as file:
+#     file.write("\nhkkjjhccccc")
+# with open("sahil.txt", mode='r+') as file:
+#      print(file.read())
+
+# import random
+# choices=input("enter rock or paper or scissor")
+#
+#
+#
+# ga = ["rock", "paper", "scissor"]
+# m = random.choice(ga)
+# choices = input("enter rock or paper or scissor")
+# if choices == "scissor":
+#     if m == "scissor":
+#             print("tie")
+#     elif m == rock:
+#             print("you lose")
+#     elif m == "paper":
+#             print(" i won")
+#
+# elif choices == "rock":
+#     if m == "rock":
+#             print("tie")
+#     elif m == paper:
+#             print("you lose")
+#     elif m == "scissor":
+#             print(" i won")
+#
+# elif choices == "paper":
+#     if m == "paper":
+#             print("tie")
+#     elif m == "scissor":
+#             print("you lose")
+#     elif m == "rock":
+#             print(" i won")
+# else:
+#     print("input is wron or something else wrong")
+
+
+

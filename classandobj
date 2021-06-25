@@ -1,0 +1,142 @@
+# class Student:
+#     pass
+#
+#
+# a=Student()
+# b=Student()
+# a.name="sahil"
+# a.rollnumber=9
+# a.list1=["fdgfgh","yjufgyuhg"]
+# print(a.name , a.rollnumber ,a.list1)
+#
+# print(a,b)
+
+# class Emp:
+#     nol=6
+#     pass
+#
+# emp1=Emp()
+#
+# emp1.name="sahil"
+# emp1.salary=90000
+#
+# emp2=Emp()
+# emp2.name="sahil"
+# emp2.salary=90000
+#
+# print(emp1.__dict__ ,)
+# print(emp1.nol)
+# Emp.nol=8
+# print(Emp.nol)
+
+# class Dog:
+#     # A simple class
+#     # attribute
+#     attr1 = "mammal"
+#     attr2 = "dog"
+#
+#     # A sample method
+#     def fun(self):
+#         print("I'm a", self.attr1)
+#         print("I'm a", self.attr2)
+#
+#
+# # Driver code
+# # Object instantiation
+# Rodger = Dog()
+#
+# # Accessing class attributes
+# # and method through objects
+# print(Rodger.attr1)
+# Rodger.fun()
+
+
+
+
+
+
+# class Emp:
+#     nol=6
+#     def detail(self):
+#         return f"Employee name {self.name} and his salary {self.salary}"
+#     pass
+#
+# emp1=Emp()
+#
+# emp1.name="sahil"
+# emp1.salary=90000
+#
+# emp2=Emp()
+# emp2.name="sahil"
+# emp2.salary=90000
+# print(emp1.detail())
+# print(type(emp1))
+#
+class Emp:
+    nol=6
+    def __init__(self , name , salary ,gender):
+
+        self.name=name
+        self.salary=salary
+        self.gender=gender
+        print(self.gender)
+
+
+
+
+emp1=Emp("sahil",9999,"male")
+print(emp1.name)
+
+
+
+# class Person:
+#
+#     # init method or constructor
+#     def __init__(self, name):
+#         self.name = name
+#
+#     # Sample Method
+#     def say_hi(self):
+#         print('Hello, my name is', self.name)
+#
+#
+# # p = Person('Nikhil')
+# p.say_hi()
+
+
+
+
+
+
+# Python3 program to show that we can create
+# instance variables inside methods
+
+# Class for Dog
+# class Dog:
+#     # Class Variable
+#     animal = 'dog'
+#
+#     # The init method or constructor
+#     def __init__(self, breed):
+#         # Instance Variable
+#         self.breed = breed
+#
+#     # Adds an instance variable
+#     def setColor(self, color):
+#         self.color = color
+#
+#     # Retrieves instance variable
+#     def getColor(self):
+#         return self.color
+#
+#
+# # Driver Code
+# Rodger = Dog("pug")
+# Rodger.setColor("brown")
+# print(Rodger.getColor())
+
+
+
+
+
+

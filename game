@@ -1,0 +1,75 @@
+import random
+TGREEN =  '\033[32m' # Green Text
+Tyello =  '\033[33m' # yellow Text
+Tblue =  '\033[34m' # blue Text
+TPURPLE =  '\033[35m' # PURPLE Text
+
+i=1
+d=0
+c=0
+w=0
+tie1=0
+tie2=0
+tie3=0
+lose1=0
+lose2=0
+lose3=0
+time1=int(input("how many time want to play"))
+while(i<=time1):
+    ga = ["rock", "paper", "scissor"]
+    m = random.choice(ga)
+    print(Tblue+"enter rock or paper or scissor\n")
+    choices = input()
+    print("macine choice is ",m)
+    if choices == "scissor":
+        if m == "scissor":
+                print("tie")
+                tie1=tie1+1
+        elif m == "rock":
+                print(Tyello+"you lose")
+                lose1=lose1+1
+        elif m == "paper":
+                print(TGREEN+" i won")
+                w=w+1
+    elif choices == "rock":
+        if m == "rock":
+                print("tie")
+                tie2=tie2+1
+        elif m == "paper":
+                print(Tyello+"you lose")
+                lose2=lose2+1
+        elif m == "scissor":
+                print(TGREEN+" i won")
+                c=c+1
+    elif choices == "paper":
+        if m == "paper":
+                print("tie")
+                tie3=tie3+1
+        elif m == "scissor":
+                print(Tyello+"you lose")
+                lose3=lose3+1
+        elif m == "rock":
+                print(TGREEN+" i won")
+
+                d=d+1
+    else:
+        print("input is wron or something else wrong")
+    i=i+1
+    a=w+c+d
+    tie=tie1+tie2+tie3
+    lose=lose1+lose2+lose3
+    print(TPURPLE+"count of your won:-",a)
+    print(TPURPLE + "count of your tie:-", tie)
+    print(TPURPLE + "count of your lose:-", lose)
+
+if a > tie and a > lose:
+    print("you won the game")
+
+
+elif a< lose:
+    print("YOU LOSE")
+
+elif a== lose:
+    print("RHE GAME HAS TEID")
+con=input("continue")
+
